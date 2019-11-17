@@ -22,7 +22,6 @@
          \
           6
 
-
 */
 
 class Solution {

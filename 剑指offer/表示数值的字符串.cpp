@@ -12,6 +12,7 @@
 using namespace std;
 #include <utility>
 
+//atoi
 
 /*
 [sign]integral-digits[.[fractional-digits]][e|E[sign]exponential-digits]
@@ -47,7 +48,7 @@ bool isNumeric(char* string){
         return false;
     
     bool numeric = true;
-
+    scanDigits(&string)
     if(*string != '\0'){
         // for float
         if(*string == '.'){

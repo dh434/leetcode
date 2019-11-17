@@ -12,6 +12,9 @@
 输出: 1->1->2->3->4->4->5->6
 
 */
+
+// 两两合并，归并法
+
 //慢
     ListNode* mergeKLists(vector<ListNode*>& lists) {
         ListNode head(0);
@@ -68,6 +71,7 @@
 
         if (p1) cur->next = p1;
         else if (p2) cur->next = p2;
+        
         return head.next;
     }
 

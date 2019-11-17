@@ -17,6 +17,14 @@ using namespace std;
 /*
 介绍：
 实现base的exponent次方，不得使用库函数，不用考虑大数问题。
+
+
+思路：
+1. 注意输入值的范围，base可以为负数，0，整数，而且exponent也可以为负数，则需要做倒数，就需要注意0的问题。
+2. 简单的做法下，负数会导致无限循环。
+3. 迭代乘法需要n次，二分的乘法只需要logn。
+4. 注意异常情况的表示：返回值，全部变量和exception。
+5.注意浮点数的比较，不能直接比较相等。
  */
 
 bool equal(double num1, double num2){
@@ -42,6 +50,7 @@ double Quick_PowerWithUnsignedExponent(double base, unsigned int exponent){
         return base;
     
     double result = Quick_PowerWithUnsignedExponent(base, exponent >> 1);
+    result *= result;
     if(exponent & 0x1 == 1){
         result *= base;
     }

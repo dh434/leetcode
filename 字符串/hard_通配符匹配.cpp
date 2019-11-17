@@ -46,6 +46,8 @@ p = "a*c?b"
 
 */
 
+//保存最后一个* ， 回溯
+
 class Solution {
 public:
     bool isMatch(string s, string p) {

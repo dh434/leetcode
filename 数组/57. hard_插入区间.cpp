@@ -15,6 +15,9 @@
 
 */
 
+//结合56题，给定的区间已经是有序的了，就不用排序了
+// 先定位到起始插入点，在往后看能不能合并
+
 class Solution {
 public:
     vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {

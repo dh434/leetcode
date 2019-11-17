@@ -70,8 +70,7 @@ public:
                        isMatchCore(s,p+2);
             else if(*p == '.' && *s == '\0'){
                 return isMatchCore(s,p+2);
-            }
-                
+            }    
             else
                 return isMatchCore(s,p+2);
         }

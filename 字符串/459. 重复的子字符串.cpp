@@ -23,6 +23,9 @@
 =
 */
 
+
+// 假设t为重复子串的长度，遍历
+
 class Solution {
 public:
     bool repeatedSubstringPattern(string s) {

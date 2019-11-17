@@ -55,8 +55,6 @@ public:
         string target = "";
         for(int i =1 ;i<path_size;++i){
             if(path[i] == '/'){
-                if(target.size() != 0)
-                    cout<<target<<endl;
                 if(target.size() == 0 || target == "."){
                     target = "";
                     start = i;

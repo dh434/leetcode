@@ -21,7 +21,8 @@
 */
 
 
-//注意queue的使用  push, pop, front, back()
+//注意queue的使用  push, pop, front, 
+// back()返回一个引用，指向队列的最后一个元素
 
 class Solution {
 public:

@@ -30,7 +30,7 @@
 -10000 < points[i][1] < 10000
 
 */
-
+//k个最大或者最小，
 
 // 1. 小顶堆
 class Solution {
@@ -63,7 +63,7 @@ public:
         int x;
         int y;
         bool operator<(const point& a) const{
-            return x*x+y*y > a.x * a.x + a.y*a.y;
+            return x*x+y*y > a.x * a.x + a.y*a.y;  // 小顶堆
         }
     };
     

@@ -69,6 +69,7 @@ public:
         int right = 2*index + 2;// index的右子节点
 
         int maxIdx = index;
+        // 必须先left后right
         if(left<len && record[left] < record[maxIdx])     maxIdx = left;
         if(right<len && record[right] < record[maxIdx])     maxIdx = right;
 

@@ -17,6 +17,9 @@ S 只包含小写字母并且长度在[1, 500]区间内。
 
 */
 
+//统计字母个数
+// 然后，对于count>（len/2+1），优先填偶数
+
 class Solution {
 public:
     string reorganizeString(string S) {

@@ -19,7 +19,7 @@
 
 */
 
-// 使用两个stack
+// 使用两个stack交替
 
 
 class Solution {

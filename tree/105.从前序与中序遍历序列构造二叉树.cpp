@@ -53,7 +53,10 @@ public:
         return constructTree(preorder, inorder, 0, preorder.size() -1, 0, inorder.size() -1 );
     }
     
-     TreeNode* constructTree(vector<int>& preorder, vector<int>& inorder,int p_start,int p_end,int i_start,int i_end ){
+     TreeNode* constructTree(vector<int>& preorder, 
+                            vector<int>& inorder,
+                            int p_start,int p_end,
+                            int i_start,int i_end ){
         
          // cout<<p_start<<p_end<<i_start<<i_end<<endl;
          
@@ -61,13 +64,10 @@ public:
         TreeNode* root = new TreeNode(rootval);
         
         if (p_start == p_end){
-            if(i_start == i_end && preorder[p_start] == inorder[i_start]){
-                return root;
-            } 
+            if(i_start == i_end && preorder[p_start] == inorder[i_start])
+                return root; 
             else
-            {
                 return NULL;
-            }
         }
 
         int root_inorder_index = i_start;

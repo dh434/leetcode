@@ -1,7 +1,8 @@
 /*
 在一个仓库里，有一排条形码，其中第 i 个条形码为 barcodes[i]。
 
-请你重新排列这些条形码，使其中两个相邻的条形码 不能 相等。 你可以返回任何满足该要求的答案，此题保证存在答案。
+请你重新排列这些条形码，使其中两个相邻的条形码 不能 相等。 
+你可以返回任何满足该要求的答案，此题保证存在答案。
 
  
 
@@ -45,7 +46,7 @@ public:
         while(!pq.empty()){
             auto p = pq.top();
             pq.pop();
-             while(p.first>0 && even<len){
+            while(p.first>0 && even<len){
                 res[even] = p.second;
                 p.first --;
                 even += 2;
